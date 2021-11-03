@@ -6,6 +6,8 @@ const server = express()
 
 server.set('view engine', 'ejs') // o responsável pela view engine será o 'ejs'
 
+server.use(express.static("public")) //utilização de arquivos styles
+
 server.set('views', path.join(__dirname, 'views'))
 
 server.use(route)
