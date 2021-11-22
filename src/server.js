@@ -10,6 +10,7 @@ server.use(express.static("public")) //utilização de arquivos styles
 
 server.set('views', path.join(__dirname, 'views'))
 
+server.use(express.urlencoded({extended: true})) // pega o conteúdo vindo do formulário, decodifica e passa para o controller
 server.use(route)
 
 server.listen(3000, () => console.log("TA RODANDO"))
