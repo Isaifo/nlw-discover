@@ -17,7 +17,7 @@ module.exports = {
       /* Verificar se um número sala já é existente */
       const roomsExistIds = await db.all(`SELECT id FROM rooms`)
       isRoom = roomsExistIds.some(roomsExistIds => roomsExistIds == roomId)
-      
+
       if (!isRoom) {
         /* Inserir a sala no banco */
         await db.run(`INSERT INTO rooms (
@@ -37,5 +37,10 @@ module.exports = {
     await db.close()
 
     res.redirect(`/room/${roomId}`)
+  },
+
+  open(req, res){
+   const roomId =  req.params.room
+     res.render("room",{roomId: roomId})
   }
 }
