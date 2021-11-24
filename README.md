@@ -1,5 +1,5 @@
 <h1 align="center">
-	Rocket.Q - API de perguntas sobre tecnologia
+	<br> Rocket.Q
 </h1>
 <div>
     <p align="center">
@@ -38,5 +38,29 @@
     
   <br>
   
-    
 </div>
+
+## 📌About
+
+<div>
+    <p align="center">
+    <em>
+        Api de perguntas sobre tecnologia<br>       
+
+</div>
+	   
+## 🚀Features
+
+ <p align="center">
+  
+ </p>
+
+ - Criação de salas
+ - Inserção e Exclusão de perguntas, podendo marcar como lida.
+ - Ingressar em uma sala criada
+
+**You must have already installed**
+- [Node.js](https://nodejs.org/en/)
+- [Npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+- [Sqlite](https://www.npmjs.com/package/sqlite)
+
